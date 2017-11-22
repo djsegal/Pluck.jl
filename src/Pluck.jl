@@ -22,4 +22,8 @@ module Pluck
     _pluck(cur_array, true)
   end
 
+  function pluck(cur_iterator::Union{Base.KeyIterator, Base.ValueIterator})
+    pluck(collect(cur_iterator))
+  end
+
 end

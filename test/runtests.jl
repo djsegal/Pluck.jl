@@ -41,3 +41,20 @@ end
 @test_throws BoundsError pluck!(cur_array)
 
 @test sort(init_array) == sort(actual_values)
+
+# ------------
+#  test dicts
+# ------------
+
+cur_dict = Dict(
+  "foo" => +7,
+  "bar" => -1
+)
+
+@test in(pluck(keys(cur_dict)), keys(cur_dict))
+
+@test in(pluck(values(cur_dict)), values(cur_dict))
+
+@test_throws MethodError pluck!(keys(cur_dict))
+
+@test_throws MethodError pluck!(values(cur_dict))
