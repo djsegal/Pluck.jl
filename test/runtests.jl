@@ -41,26 +41,3 @@ end
 @test_throws BoundsError pluck!(cur_array)
 
 @test sort(init_array) == sort(actual_values)
-
-# ---------------
-#  test ordering
-# ---------------
-
-cur_array = copy(init_array)
-
-srand(1234)
-
-expected_array = [
-  0,
-  42,
-  123,
-  -1,
-  0,
-  1,
-  0
-]
-
-for expected_value in expected_array
-  actual_value = pluck(cur_array)
-  @test actual_value == expected_value
-end
