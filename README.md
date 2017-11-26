@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/djsegal/Pluck.jl.svg?branch=master)](https://travis-ci.org/djsegal/Pluck.jl) [![codecov.io](http://codecov.io/github/djsegal/Pluck.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/Pluck.jl?branch=master)
 
+pluck random values from arrays in julia
+
 ## Usage
 
 #### given:
